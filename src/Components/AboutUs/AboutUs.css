@@ -1,0 +1,30 @@
+.aboutus {
+    min-height: 100vh;
+    background: #111015;
+    padding: 10px 90px;
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+  }
+  
+  .aboutus-tilte  {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+  }
+  
+  /* MAIN LAYOUT */
+  
+  .about-img img {
+    align-items: center;
+    width: 800px;
+  }
+  
+  
+  
+  
+  
