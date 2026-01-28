@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { getPosts } from "../../Mock/blogStore";
+import { POSTS } from "../../Mock/blogData";
 import "./Blog.css";
 
 export default function Blog() {
@@ -8,14 +8,15 @@ export default function Blog() {
   const [page, setPage] = useState(0);
 
   // ✅ Always read from storage
-  const posts = useMemo(() => getPosts(), []);
+  const posts = useMemo(() => POSTS, []);
 
-  const maxPage = Math.max(0, Math.ceil(posts.length / perPage) - 1);
+
+  // const maxPage = Math.max(0, Math.ceil(posts.length / perPage) - 1);
   const start = page * perPage;
   const current = posts.slice(start, start + perPage);
 
   const prev = () => setPage((p) => (p > 0 ? p - 1 : p));
-  const next = () => setPage((p) => (p < maxPage ? p + 1 : p));
+  // const next = () => setPage((p) => (p < maxPage ? p + 1 : p));
 
   return (
     <section className="blog-section" id="blog">
@@ -42,10 +43,11 @@ export default function Blog() {
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-excerpt">{post.excerpt}</p>
 
-              {/* ✅ Go to BlogPage */}
-              <Link to="/blogpage" className="blog-arrow" aria-label="Open blogs">
+              {/* ✅ Go to Blogdetails */}
+              <Link to={`/blog/${post.id}`} className="blog-arrow" aria-label="Read more">
                 →
               </Link>
+            
             </article>
           ))}
         </div>
@@ -54,13 +56,16 @@ export default function Blog() {
           <button className="circle-btn" onClick={prev} disabled={page === 0}>
             ←
           </button>
-          <button
+          {/* <button
             className="circle-btn"
             onClick={next}
             disabled={page === maxPage}
           >
             →
-          </button>
+          </button> */}
+          <Link to="/blogpage" className="circle-btn" aria-label="Open blogs">
+              →
+          </Link>
         </div>
       </div>
     </section>

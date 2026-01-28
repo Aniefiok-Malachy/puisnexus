@@ -1,30 +1,116 @@
 .aboutus {
-    min-height: 100vh;
-    background: #111015;
-    padding: 10px 90px;
-    color: white;
-    text-align: center;
-    padding-top: 90px;
+  min-height: 100vh;
+  background: #111015;
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+
+  /* desktop default */
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+.about-head{
+  max-width: 980px;
+  margin: 0 auto 48px auto;
+  text-align: center;
+  /* padding: 0 16px; */
+}
+
+.about-head-title{
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.about-head-sub{
+  margin: 16px auto 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.95;
+  max-width: 650px;
+}
+
+.about-head-text{
+  margin: 28px auto 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 700;
+  opacity: 0.9;
+  max-width: 900px;
+}
+
+/* image responsive */
+.about-img {
+  width: 100%;
+  max-width: 900px;   /* optional cap on big screens */
+  margin: 0 auto;
+}
+
+.about-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* cap for large screens */
+  width: 100%;
+}
+
+
+
+/* Tablet */
+@media (max-width: 992px){
+  .about-head-title{ font-size: 34px; }
+  .about-head-sub{ font-size: 16px; }
+  .about-head-text{ font-size: 16px; }
+
+  .aboutus{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
   }
-  
-  .aboutus-tilte  {
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    margin-right: 100px;
-    margin-bottom: 40px;
-    padding-left: 50px;
+
+  .about-img{
+    max-width: 700px;
+    min-width: 0;
   }
-  
-  /* MAIN LAYOUT */
-  
+
   .about-img img {
-    align-items: center;
-    width: 800px;
+    width: 100%;
   }
-  
-  
-  
-  
-  
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .about-head{
+    margin-bottom: 32px;
+  }
+
+  .about-head-title{ font-size: 28px; }
+  .about-head-sub{ font-size: 14px; }
+  .about-head-text{ 
+    font-size: 14px; 
+    line-height: 1.65; 
+  }
+
+  .aboutus{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 70px;
+  }
+
+  .about-img{
+    max-width: 100%;
+    min-width: 0;
+
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+}

@@ -1,105 +1,238 @@
+:root {
+  --nav-h: 86px;
+}
+
+/* ======================
+   PAGE WRAPPER
+====================== */
 .bd-page {
-    position: relative;
-    min-height: 100vh;
-    padding: 110px 0;
-    background: radial-gradient(circle at center, #0f1117 0%, #05060b 82%);
-    color: white;
-    overflow: hidden;
-  }
+  position: relative;
+  min-height: 100vh;
+  padding-top: calc(4px + var(--nav-h));
+  padding-bottom: 30px;
+  background: radial-gradient(circle at center, #0f1117 0%, #05060b 82%);
+  color: white;
+  overflow: hidden;
+}
+
+/* ======================
+   CONTAINER
+====================== */
+.bd-container {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+/* ======================
+   TITLE & META
+====================== */
+.bd-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.bd-inline-link{
+  color: #2f5cff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.bd-inline-link:hover{
+  text-decoration: underline;
+}
+
+
+.bd-meta {
+  font-size: 14px;
+  /* opacity: 0.01; */
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 2px;
+}
+
+.bd-dot {
+  opacity: 0.9;
+}
+
+/* ======================
+   BODY CONTENT
+====================== */
+.bd-body {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
   
-  /* Centered page width */
+}
+
+/* Paragraphs */
+.bd-body p {
+  margin-bottom: 2px;
+  margin-top: 1px;
+  opacity: 0.9;
+
+}
+
+/* Subtitles */
+.bd-body h2 {
+  font-size: 20px;
+  margin: 10px 0 10px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+/* Lists */
+.bd-body ul {
+  opacity: 0.9;
+  padding-left: 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+
+.bd-body li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+
+}
+
+/* ======================
+   BACKGROUND WAVES
+====================== */
+.bd-wave {
+  position: absolute;
+  right: -260px;
+  bottom: -220px;
+  width: 980px;
+  height: 980px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.12) 0px,
+    rgba(255, 255, 255, 0.12) 2px,
+    transparent 2px,
+    transparent 18px
+  );
+  transform: rotate(18deg);
+  opacity: 0.55;
+  z-index: 1;
+}
+
+.bd-wave-2 {
+  right: -320px;
+  bottom: -280px;
+  width: 1120px;
+  height: 1120px;
+  opacity: 0.30;
+  background: repeating-radial-gradient(
+    circle,
+    rgba(110, 140, 255, 0.18) 0px,
+    rgba(110, 140, 255, 0.18) 2px,
+    transparent 2px,
+    transparent 22px
+  );
+  transform: rotate(22deg);
+}
+
+/* Faint overlay */
+.bd-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 60% 40%, rgba(130, 90, 255, 0.10), transparent 55%);
+  z-index: 0;
+}
+
+/* ======================
+   TABLET
+====================== */
+@media (max-width: 992px) {
   .bd-container {
-    width: 100%;
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 0 28px;
-    position: relative;
-    z-index: 3;
+    max-width: 720px;
+    padding: 0 22px;
+  }
+
+  .bd-title {
+    font-size: 28px;
+  }
+
+  .bd-body {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .bd-body h2 {
+    font-size: 18px;
+  }
+}
+
+/* ======================
+   MOBILE
+====================== */
+@media (max-width: 600px) {
+  :root {
+    --nav-h: 80px;
+  }
+
+  .bd-container {
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  .bd-title {
+    font-size: 22px;
     text-align: center;
   }
-  
-  /* Title */
-  .bd-title {
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    margin: 0 0 14px;
-  }
-  
-  /* Meta row */
+
   .bd-meta {
-    font-size: 11px;
-    opacity: 0.6;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 32px;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 26px;
   }
-  
-  .bd-dot {
-    opacity: 0.8;
-  }
-  
-  /* Body text */
+
   .bd-body {
-    text-align: left;
-    font-size: 10px;
-    line-height: 1.7;
-    opacity: 0.62;
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.65;
   }
-  
-  .bd-body p {
-    margin: 0 0 18px;
+
+  .bd-body h2 {
+    font-size: 16px;
+    margin-top: 28px;
   }
-  
-  /* =========================
-     VERY VISIBLE WAVE BACKGROUND
-     ========================= */
-  
+
   .bd-wave {
-    position: absolute;
-    right: -260px;
-    bottom: -220px;
-    width: 980px;
-    height: 980px;
-    border-radius: 50%;
-    background: repeating-radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.12) 0px,
-      rgba(255, 255, 255, 0.12) 2px,
-      transparent 2px,
-      transparent 18px
-    );
-    transform: rotate(18deg);
-    opacity: 0.55;              /* makes it very visible */
-    z-index: 1;
-    filter: blur(0.2px);
+    width: 620px;
+    height: 620px;
+    opacity: 0.28;
   }
-  
-  /* Second layer for depth */
+
   .bd-wave-2 {
-    right: -320px;
-    bottom: -280px;
-    width: 1120px;
-    height: 1120px;
-    opacity: 0.30;
-    background: repeating-radial-gradient(
-      circle,
-      rgba(110, 140, 255, 0.18) 0px,
-      rgba(110, 140, 255, 0.18) 2px,
-      transparent 2px,
-      transparent 22px
-    );
-    transform: rotate(22deg);
+    width: 720px;
+    height: 720px;
+    opacity: 0.18;
   }
-  
-  /* Optional: faint lines across whole page */
-  .bd-page::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 60% 40%, rgba(130, 90, 255, 0.10), transparent 55%);
-    z-index: 0;
+}
+
+/* ======================
+   SMALL PHONES
+====================== */
+@media (max-width: 420px) {
+  .bd-title {
+    font-size: 20px;
   }
-  
+
+  .bd-body {
+    font-size: 13px;
+  }
+}

@@ -8,7 +8,6 @@
     padding: 18px 0;
     background: transparent; 
     margin-top: 0px;         /* important */
-    /* pointer-events: none; */
   }
   
   /* This is the pill glass bar */
@@ -19,16 +18,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    font-family: inherit;
     border-radius: 999px;            /* pill shape */
-    background: rgba(10, 12, 18, 0.55);
+    background: rgba(45, 50, 55, 0.05);
     backdrop-filter: blur(16px);
-  
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow:
       0 12px 30px rgba(0,0,0,0.35),
       inset 0 1px 0 rgba(255,255,255,0.06);
       pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+
+  }
+
+  .nav-inner button{
+    background: rgba(45, 50, 55, 0.001);
+    cursor: pointer;
+    border: 0;
+    color: white;
+    display: flex;
+    gap: 12px;
+    border-radius: 15px;
   }
   
   /* Left brand */
@@ -38,6 +48,15 @@
     gap: 10px;
     color: white;
     text-decoration: none;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+
+    
   }
   
   .nav-logo{
@@ -54,12 +73,15 @@
     font-weight: 600;
     font-size: 14px;                 /* was too big */
     opacity: 0.9;
+    color: white;
+
   }
   
   /* Center links */
   .nav-links{
     display: flex;
     gap: 32px;
+    cursor: pointer;
   }
   
   .nav-link{
@@ -67,6 +89,9 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
+
   }
   
   .nav-link:hover{
@@ -79,72 +104,94 @@
   
   /* Right button */
   .nav-cta{
-    background: #2f5cff;
     color: white;
     text-decoration: none;
     padding: 9px 14px;
     border-radius: 999px;
     font-size: 11px;                 /* was too big */
     font-weight: 800;
+    font-family: inherit;
     letter-spacing: 0.02em;
     box-shadow: 0 10px 18px rgba(47,92,255,0.25);
+    -webkit-tap-highlight-color: transparent;
+
   }
+
   
-  @media (max-width: 920px){
-    .nav-inner{
-      max-width: 96%;
-      padding: 8px 10px;
-      display: grid;
-      grid-template-columns: 1fr auto;  /* left brand, right button */
-      grid-template-rows: auto auto;    /* row1, row2 */
-      align-items: center;
-      gap: 10px;
-      border-radius: 999px;  
-    }
-  
-    .nav-brand{
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .nav-cta{
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      justify-self: end;
-      font-size: 11px;
-      padding: 9px 14px;
-      margin: 0;
-    }
-  
-    .nav-links{
-      grid-column: 1 / 3;              /* full width second row */
-      grid-row: 2 / 3;
-      margin-top: -40px;
-      padding-bottom: 0;
-      display: flex !important;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-bottom: 4px;
-    }
-  
-    .nav-logo{
-      width: 30px;
-      height: 30px;
-    }
-  
-    .nav-name{
-      font-size: 13px;
-    }
-  
-    .nav-link{
-      font-size: 13px;
-      font-weight: 600;
-      white-space: nowrap;
-      line-height: 1;
-    }
+  /* RESPONSIVE */
+ 
+/* Tablet and below */
+@media (max-width: 920px){
+  .site-nav{
+    padding: 12px 0;
   }
+
+  .nav-inner{
+    max-width: 94%;
+    padding: 10px 12px;
+    gap: 12px;
+  }
+
+  /* REMOVE the overlap */
+  .nav-links{
+    margin-top: 0;             
+    padding: 6px 0 2px;
+  }
+
+  /* Make links tap friendly */
+  .nav-link{
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px){
+  .nav-inner{
+    max-width: 92%;
+    padding: 10px 10px;
+    border-radius: 18px;        
+  }
+
+  .nav-name{
+    font-size: 12px;
+  }
+
+  .nav-links{
+    gap: 10px;
+  }
+
+  .nav-link{
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .nav-cta{
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px){
+  .nav-inner{
+    max-width: 94%;
+    padding: 10px 8px;
+  }
+
+  .nav-links{
+    gap: 8px;
+  }
+
+  .nav-link{
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+
+  .nav-cta{
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+}
+
   

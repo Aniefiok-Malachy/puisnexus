@@ -4,8 +4,6 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <header className="hero">
-      
-
       {/* background decor */}
       <div className="hero-bg">
         <div className="orb orb-left" />

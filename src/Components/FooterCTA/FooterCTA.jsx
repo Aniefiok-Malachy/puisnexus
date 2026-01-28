@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./FooterCTA.css";
 import telegram from "../Assets/tg.png";
 import linkedin from "../Assets/in.png";
@@ -8,6 +7,10 @@ import instagram from "../Assets/ins.png";
 import puis_logo from "../Assets/Dashboard.png";
 
 export default function FooterCTA() {
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="footer-wrap" id="contact">
       <div className="cta-box">
@@ -26,15 +29,11 @@ export default function FooterCTA() {
           className="cta-btn">
           Book a Call <span className="cta-arrow">→</span>
         </button>
-
-        {/* <button className="cta-btn">
-          Book a call <span className="cta-arrow">→</span>
-        </button> */}
-      </div>
+        </div>
 
       <div className="footer">
         <div className="footer-inner">
-          <div className="footer-col footer-brand">
+        <div className="footer-col footer-brand">
             <div className="footer-logo">
               <span className="logo-dot">
                 <img src={puis_logo} alt="" />
@@ -64,19 +63,36 @@ export default function FooterCTA() {
               </a>
             </div>
           </div>
+
           {/* Navigation */}
           <div className="footer-col">
             <h4>Navigation</h4>
-            <Link to="/services">Services</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/resources">Resources</Link>
+            <button type="button" className="footer-link" onClick={() => scrollTo("services")}>
+              Services
+            </button>
+            <button type="button" className="footer-link" onClick={() => scrollTo("about")}>
+              About Us
+            </button>
+            <button type="button" className="footer-link" onClick={() => scrollTo("resources")}>
+              Resources
+            </button>
+            {/* <button type="button" className="footer-link" onClick={() => scrollTo("contact")}>
+              Contact
+            </button> */}
           </div>
+
           {/* Licence */}
           <div className="footer-col">
             <h4>Licence</h4>
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/copyright">Copyright</Link>
-            <Link to="/email-address">Email Address</Link>
+            <button type="button" className="footer-link" onClick={() => scrollTo("privacy-policy")}>
+              Privacy Policy
+            </button>
+            <button type="button" className="footer-link" onClick={() => scrollTo("copyright")}>
+              Copyright
+            </button>
+            <button type="button" className="footer-link" onClick={() => scrollTo("email-address")}>
+              Email Address
+            </button>
           </div>
 
           <div className="footer-col">
