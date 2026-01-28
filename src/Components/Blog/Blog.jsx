@@ -25,9 +25,9 @@ export default function Blog() {
           <h2>BLOG</h2>
           <p>
             This article explores the real world principles behind product design,
-            <br />
+            {/* <br /> */}
             user experience, technology choices, and growth strategies that
-            <br />
+            {/* <br /> */}
             define long term success in Web3
           </p>
         </div>

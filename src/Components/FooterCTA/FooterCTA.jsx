@@ -98,8 +98,8 @@ export default function FooterCTA() {
           <div className="footer-col">
             <h4>Contact</h4>
             <div className="contact-item">
-              <span className="icon">📞</span>
-              <span>(406) 555-0120</span>
+              {/* <span className="icon">📞</span> */}
+              {/* <span>(406) 555-0120</span> */}
             </div>
             <div className="contact-item">
               <span className="icon">✉️</span>

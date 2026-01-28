@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import Aboutimg from "../Assets/aboutus.png"
-
+import mobile_img from "../Assets/mobile.png"
 // import shield from "../../assets/shield.png";
 // import lock from "../../assets/lock.png";
 // import user from "../../assets/user.png";
@@ -22,7 +22,14 @@ export default function AboutUs() {
       
 
       <div className="about-img">
-        <img src={Aboutimg} alt=''  />
+        <picture>
+          {/* Mobile image */}
+          <source srcSet={mobile_img} media = "(max-width:768px)"/>
+          
+          {/* Desktop image */}
+          <img src={Aboutimg} alt='About Puis Nexus'  />
+        </picture>
+        
       </div>
 
     </div>
