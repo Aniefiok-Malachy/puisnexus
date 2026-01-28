@@ -62,7 +62,7 @@ export default function Blog() {
             disabled={page === maxPage}
           >
             →
-          </button> */}
+          </button>  */}
           <Link to="/blogpage" className="circle-btn" aria-label="Open blogs">
               →
           </Link>
