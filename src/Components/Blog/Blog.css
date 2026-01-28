@@ -1,7 +1,7 @@
 .blog-section {
   width: 100%;
   padding: 20px 0;
-  padding-top: 10px;
+  padding-top: 90px;
   background: radial-gradient(circle at center, #0f1117 0%, #05060b 80%);
   color: white;
 }
@@ -63,7 +63,7 @@
 }
 
 .read {
-  font-size: 10px;
+  font-size: 11px;
   color: rgba(11, 13, 20, 0.6);
 }
 
@@ -190,11 +190,11 @@
   }
 
   .blog-title {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .blog-excerpt {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -215,7 +215,7 @@
   }
 
   .blog-header p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.6;
   }
 
@@ -228,16 +228,21 @@
   .blog-card {
     aspect-ratio: auto;
     min-height: 260px;
-    padding: 14px;
+    padding: 10px 18px;
+    margin: auto;
+    width: 50%;
   }
 
   .blog-title {
-    font-size: 16px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-bottom: 10px;
   }
 
   .blog-excerpt {
-    font-size: 14px;
-    padding-right: 36px;
+    font-size: 15px;
+    padding-left: 10px;
+
   }
 
   .blog-arrow {

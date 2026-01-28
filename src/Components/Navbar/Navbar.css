@@ -6,7 +6,7 @@
   width: 100%;
   padding: 18px 0;
   background: transparent;
-  margin-top: 0px;
+  margin-top: -10px;
 }
 
 /* This is the pill glass bar */
@@ -108,16 +108,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* ------------------------------ */
-/* ✅ NEW: Desktop hide class      */
-/* ------------------------------ */
+/* Desktop group wrapper */
 .desktop{
   display: flex;
 }
 
-/* ------------------------------ */
-/* ✅ NEW: Hamburger button        */
-/* ------------------------------ */
+/* Hamburger button (hidden on desktop by default) */
 .nav-hamburger{
   display: none;
   width: 56px;
@@ -127,12 +123,10 @@
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(14px);
   cursor: pointer;
-
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 7px;
-
   padding: 0;
 }
 
@@ -144,28 +138,31 @@
   display: block;
 }
 
-/* ------------------------------ */
-/* ✅ NEW: Mobile dropdown menu    */
-/* ------------------------------ */
+/* Mobile dropdown menu (hidden until React adds .open) */
 .mobile-menu{
-  display: none;
+  display: flex;
   position: absolute;
-  top: calc(100% + 12px);
-  left: 50%;
+  top: calc(100% + 2px);
+  left: 78%;
   transform: translateX(-50%);
-  width: min(520px, calc(100% - 32px));
+  width: min(200px, calc(100% - 32px));
   padding: 18px;
 
   background: rgba(15,17,23,0.92);
   backdrop-filter: blur(20px);
 
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 2px solid rgba(255,255,255,0.10);
   box-shadow: 0 22px 60px rgba(0,0,0,0.55);
   z-index: 99999;
 
   flex-direction: column;
   gap: 14px;
+}
+
+/* ✅ show only when open */
+.mobile-menu.open{
+  display: flex;
 }
 
 .mobile-menu button{
@@ -195,7 +192,7 @@
 }
 
 /* ------------------------------ */
-/* ✅ RESPONSIVE                  */
+/* RESPONSIVE                      */
 /* ------------------------------ */
 
 /* Tablet and below */
@@ -216,14 +213,11 @@
     display: none !important;
   }
 
-  /* Show hamburger */
+  /* Show hamburger ONLY on mobile */
   .nav-hamburger{
     display: flex;
-  }
-
-  /* show dropdown when open */
-  .mobile-menu{
-    display: flex;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-name{
@@ -267,5 +261,14 @@
 
   .nav-hamburger span{
     width: 18px;
+  }
+}
+
+/* 🔒 ABSOLUTE DESKTOP KILL SWITCH */
+@media (min-width: 921px){
+  .nav-hamburger{
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
