@@ -286,7 +286,7 @@
   
   .stats {
     /* padding-left: 10px; */
-    gap: 20px;
+    gap: 19px;
     flex-wrap: wrap;
   }
 
@@ -301,7 +301,7 @@
   }
 
   .stat h2 {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .stat p {
