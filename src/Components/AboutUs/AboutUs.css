@@ -105,7 +105,8 @@
   }
 
   .about-img{
-    max-width: 100%;
+    width: 100%;
+    max-width: 200px;
     min-width: 0;
 
   }
