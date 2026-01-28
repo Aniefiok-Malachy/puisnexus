@@ -185,6 +185,7 @@
 @media (max-width: 600px){
   .services-section{
     padding: 70px 16px;
+    padding-top: 90px;
   }
 
   .services-header{
