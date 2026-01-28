@@ -2,20 +2,22 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import BlogPage from "./Components/BlogPage/BlogPage";
-import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import BlogDetails from "./Components/BlogDetail/BlogDetail";
-import Navbar from "./Components/Navbar/Navbar";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import MainLayout from "./Layout/Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop/>
-      <Navbar />
+      <ScrollToTop />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blogpage" element={<BlogPage/>}/>
-        <Route path="/blog/:id" element={<BlogDetails/>} />
+        {/* Pages WITH footer */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogpage" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
