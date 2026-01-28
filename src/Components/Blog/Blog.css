@@ -228,9 +228,9 @@
   .blog-card {
     aspect-ratio: auto;
     min-height: 260px;
-    padding: 10px 18px;
+    padding: 10px 20px;
     margin: auto;
-    width: 50%;
+    width: 60%;
   }
 
   .blog-title {
@@ -240,7 +240,7 @@
   }
 
   .blog-excerpt {
-    font-size: 14px;
+    font-size: 15px;
     padding-left: 10px;
 
   }
