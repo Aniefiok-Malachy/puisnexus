@@ -201,7 +201,7 @@
   }
 
   .bd-body {
-    width: 120%;
+    /* width: 120%; */
     font-size: 14px;
     line-height: 1.65;
   }
