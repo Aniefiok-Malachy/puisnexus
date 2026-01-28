@@ -197,11 +197,11 @@
     justify-content: center;
     width: 100%;
     font-size: 12px;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 
   .bd-body {
-    width: 100%;
+    width: 120%;
     font-size: 14px;
     line-height: 1.65;
   }
