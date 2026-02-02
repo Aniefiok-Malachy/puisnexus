@@ -259,8 +259,6 @@ export const CATEGORIES = [
             text:
               "No more silos—full-stack acceleration.",
           },
-    
-    
           
           { type: "h2", text: "Growth as a System, Not Tactics" },
           {
@@ -372,7 +370,7 @@ export const CATEGORIES = [
             text:
               "Hype claims billions in 'emerging market users' flock to Web3. Tweets celebrate Nigeria's 'crypto capital' status. Yet Dune Analytics reveals the truth: high download counts mask low on-chain txns. Users onboard but rarely transact.",  
           },
-          {type: "p", text : "Why 'users' ≠ 'on-chain activity.' App installs ≠ swaps or yields. Real adoption means sustained volume from utility."},,
+          {type: "p", text : "Why 'users' ≠ 'on-chain activity.' App installs ≠ swaps or yields. Real adoption means sustained volume from utility."},
     
           { type: "h2", text: "The Unique Constraints of Emerging Markets" },
           {
