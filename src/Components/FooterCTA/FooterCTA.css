@@ -74,12 +74,21 @@
   
   .footer-inner {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: -40px;
     padding: 0 40px;
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    grid-template-columns: 1.8fr  2fr 1fr;
     gap: 60px;
+    justify-content: space-between;
     align-items: start;
+    margin-bottom: -30px;
+  }
+
+  .footer-mobile{
+    display: flex;
+    grid-template-columns:  1fr;
+    gap: 120px;
+    margin-left: 70px;
   }
   
   /* Brand col */
@@ -182,25 +191,40 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 12px;
+    font-size: 15px;
     opacity: 0.75;
     margin-bottom: 10px;
   }
+
+  .contact-item a{
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+  }
   
   .contact-item .icon {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(11, 13, 20, 0.06);
     border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
   }
   
   /* RESPONSIVE */
+  
   @media (max-width: 1000px) {
     .footer-inner {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr  1fr;
     }
   
     .cta-box h2 {
@@ -218,8 +242,16 @@
     }
   
     .footer-inner {
-      grid-template-columns: 1fr;
+      grid-template-columns:  1fr;
       gap: 35px;
+    }
+
+    .footer-mobile{
+      display: flex;
+      grid-template-columns:  1fr;
+      gap: 110px;
+      margin: 0;
+      padding: 0;
     }
   }
   

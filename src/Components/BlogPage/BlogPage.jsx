@@ -37,10 +37,13 @@ export default function BlogPage() {
         </header>
         
         <div className="bp-grid">
-          {filtered.map((post) => (
+        {filtered.map((post) => (
             <article className="bp-card" key={post.id}>
-              <div className="bp-top">
-                <span className={`bp-dot ${post.dot}`} />
+              <div className="bp-media">
+                <img className="bp-img" src={post.image} alt={post.title} loading="lazy" />
+              </div>
+
+              <div className="bp-meta">
                 <span className="bp-read">{post.read}</span>
               </div>
 

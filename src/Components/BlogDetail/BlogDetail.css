@@ -32,7 +32,7 @@
    TITLE & META
 ====================== */
 .bd-title {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -55,7 +55,7 @@
   /* opacity: 0.01; */
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 200px;
   margin-bottom: 2px;
 }
 
@@ -189,14 +189,16 @@
   }
 
   .bd-title {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    margin-right: 30px;
   }
 
   .bd-meta {
     justify-content: center;
     width: 100%;
     font-size: 12px;
+    gap: 45px;
     margin-bottom: 3px;
   }
 

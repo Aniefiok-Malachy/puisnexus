@@ -1,6 +1,6 @@
 .aboutus {
   min-height: 100vh;
-  background: #111015;
+  background: radial-gradient(circle at center, #0f1117 0%, #05060b 80%);
   color: white;
   text-align: center;
   padding-top: 90px;
@@ -12,22 +12,20 @@
   box-sizing: border-box;
 }
 
-
-.about-head{
+.about-head {
   max-width: 980px;
   margin: 0 auto 48px auto;
   text-align: center;
-  /* padding: 0 16px; */
 }
 
-.about-head-title{
+.about-head-title {
   margin: 0;
   font-size: 40px;
   font-weight: 800;
   letter-spacing: 0.06em;
 }
 
-.about-head-sub{
+.about-head-sub {
   margin: 16px auto 0 auto;
   font-size: 18px;
   font-weight: 700;
@@ -35,8 +33,8 @@
   max-width: 650px;
 }
 
-.about-head-text{
-  margin: 28px auto 0 auto;
+.about-head-text {
+  margin: 18px auto 0 auto;
   font-size: 18px;
   line-height: 1.7;
   font-weight: 700;
@@ -44,74 +42,227 @@
   max-width: 900px;
 }
 
-/* image responsive */
-.about-img {
-  width: 100%;
-  max-width: 900px;   /* optional cap on big screens */
-  margin: 0 auto;
+/* ✅ Hide mobile numbered section on desktop by default */
+.about-mobile-points{
+  display: none;
 }
 
-.about-img img {
-  display: block;
+/* ✅ Show it only on mobile */
+@media (max-width: 768px){
+  .about-mobile-points{
+    display: block;
+  }
+}
+
+
+/* ============================= */
+/* DESKTOP: text around the image */
+/* ============================= */
+.about-around {
+  max-width: 1100px;
   margin: 0 auto;
-  max-width: 100%;
+  display: grid;
+
+  /* make side texts closer to image */
+  grid-template-columns: minmax 1fr 520px 1fr;
+
+  grid-template-areas:
+    "left center right"
+    ". bottom .";
+
+  align-items: center;
+  column-gap: 2px;  /* ✅ controls closeness left/right */
+  row-gap: 6px 6px;
+  align-items: center;
+}
+
+.about-left {
+  grid-area: left;
+  text-align: left;
+  justify-self: end;
+  margin-top: -250px;
+  margin-left: 20px;
+}
+
+.about-right {
+  grid-area: right;
+  text-align: right;
+  justify-self: start;
+  padding-right: -10px;
+  margin-top: -250px;
+  margin-right: 20px;
+  
+}
+
+.about-bottom {
+  grid-area: bottom;
+  justify-self: center;
+  max-width: 640px;
+  text-align: center;
+}
+
+/* Center image */
+.about-center {
+  grid-area: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -80px; */
+  /* margin-right: -70px; */
+}
+
+.about-center img {
+  width: 200%;
+  max-width: 660px;
   height: auto;
+  display: block;
   object-fit: contain;
-  /* cap for large screens */
-  width: 100%;
+  margin-left: -150px;
 }
 
+/* Text blocks */
+.about-card {
+  color: rgba(255, 255, 255, 0.92);
+}
 
+.about-card-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
 
-/* Tablet */
-@media (max-width: 992px){
-  .about-head-title{ font-size: 34px; }
-  .about-head-sub{ font-size: 16px; }
-  .about-head-text{ font-size: 16px; }
+.about-card-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  opacity: 0.9;
+  max-width: 360px;
+}
 
-  .aboutus{
+.about-bottom .about-card-text {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* TABLET: stack (but keep desktop cards) */
+/* ============================= */
+@media (max-width: 992px) {
+  .aboutus {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 80px;
   }
 
-  .about-img{
-    max-width: 700px;
-    min-width: 0;
+  .about-head-title { font-size: 34px; }
+  .about-head-sub { font-size: 16px; }
+  .about-head-text { font-size: 16px; }
+
+  .about-around {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "center"
+      "left"
+      "right"
+      "bottom";
+    row-gap: 18px;
   }
 
-  .about-img img {
-    margin-top: 20px;
-    width: 100%;
+  .about-left,
+  .about-right,
+  .about-bottom {
+    justify-self: center;
+    text-align: left;
+    padding: 0;
+  }
+
+  .about-card-text {
+    max-width: 640px;
+  }
+
+  .about-center img {
+    max-width: 520px;
   }
 }
 
-/* Mobile */
-@media (max-width: 600px){
-  .about-head{
-    margin-bottom: 32px;
-  }
-
-  .about-head-title{ font-size: 28px; }
-  .about-head-sub{ font-size: 14px; }
-  .about-head-text{ 
-    font-size: 14px; 
-    line-height: 1.65; 
-  }
-
-  .aboutus{
+/* ============================= */
+/* MOBILE: keep image + numbered list, hide desktop cards */
+/* ============================= */
+@media (max-width: 768px) {
+  .aboutus {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 70px;
   }
 
-  .about-img{
-    max-width: 100%;
-    min-width: 0;
-
+  /* keep only the image in this grid on mobile */
+  .about-around {
+    display: block;
+    max-width: 520px;
   }
 
-  .about-img img {
-    width: 100%;
+  .about-left,
+  .about-right,
+  .about-bottom {
+    display: none;
+  }
+
+  .about-center img {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* mobile numbered layout (from your JSX) */
+  .about-mobile-points {
+    display: block;
+    max-width: 520px;
+    margin: 18px auto 0;
+    text-align: left;
+  }
+
+  .about-point {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .about-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex: 0 0 auto;
+  }
+
+  .about-point h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .about-point p {
+    margin: 0;
+    opacity: 0.85;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+  .about-head {
+    margin-bottom: 32px;
+  }
+
+  .about-head-title { font-size: 28px; }
+  .about-head-sub { font-size: 14px; }
+  .about-head-text { font-size: 14px; line-height: 1.65; }
+
+  .about-center img {
+    max-width: 380px;
   }
 }

@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import nav_icon from "../Assets/Dashboard.png";
+import nav_icon from "../Assets/nav_logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Brand */}
         <button onClick={() => goToSection("home")} className="nav-brand">
           <img src={nav_icon} alt="" className="nav-logo" />
-          <span className="nav-name">Puis Nexus</span>
+          {/* <span className="nav-name">Puis Nexus</span> */}
         </button>
 
         {/* Desktop links */}

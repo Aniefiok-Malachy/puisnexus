@@ -1,8 +1,8 @@
 import Hero from "../Components/Hero/Hero";
 import Services from "../Components/Services/Services";
 import AboutLayout from "../Components/AboutLayout/AboutLayout";
+import Partners from "../Components/Partners/Partners";
 import Resources from "../Components/Resources/Resources";
-// import FooterCTA from "../Components/FooterCTA/FooterCTA";
 
 export default function Home() {
   return (
@@ -14,18 +14,14 @@ export default function Home() {
       <section id="services">
         <Services />
       </section>
-
+      <Partners />
       <section id="about">
         <AboutLayout />
       </section>
-
       <section id="resources">
         <Resources />
       </section>
 
-      {/* <section id="contact" >
-      <FooterCTA />
-      </section> */}
     </>
   );
 }

@@ -5,6 +5,7 @@ import linkedin from "../Assets/in.png";
 import twitter from "../Assets/x.png";
 import instagram from "../Assets/ins.png";
 import puis_logo from "../Assets/Dashboard.png";
+import email from "../Assets/Vector.png"
 
 export default function FooterCTA() {
   const scrollTo = (id) => {
@@ -15,13 +16,13 @@ export default function FooterCTA() {
     <footer className="footer-wrap" id="contact">
       <div className="cta-box">
         <h2>
-          Let’s build, launch, and scale your Web3 <br />
+          Let's build, launch, and scale your Web3 <br />
           project - the right way
         </h2>
 
         <p>
           Reach out for collaborations, campaigns or partnerships. Let <br />
-          us bring your project’s vision to life
+          us bring your project's vision to life
         </p>
 
         <button 
@@ -65,6 +66,7 @@ export default function FooterCTA() {
           </div>
 
           {/* Navigation */}
+          <div className="footer-mobile">
           <div className="footer-col">
             <h4>Navigation</h4>
             <button type="button" className="footer-link" onClick={() => scrollTo("services")}>
@@ -94,6 +96,8 @@ export default function FooterCTA() {
               Email Address
             </button>
           </div>
+          </div>
+          
 
           <div className="footer-col">
             <h4>Contact</h4>
@@ -102,8 +106,12 @@ export default function FooterCTA() {
               {/* <span>(406) 555-0120</span> */}
             </div>
             <div className="contact-item">
-              <span className="icon">✉️</span>
-              <span>hey@boostin.com</span>
+              <span className="icon">
+                <img src={email} alt=""/>
+              </span>
+              <>
+              <a href="hey@boostin.com">hey@boostin.com</a>
+              </>
             </div>
           </div>
         </div>

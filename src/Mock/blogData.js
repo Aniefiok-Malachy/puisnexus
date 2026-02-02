@@ -1,5 +1,5 @@
 // import { type } from "@testing-library/user-event/dist/type";
-
+import mobile from "../Components/Assets/mobile.png";
 export const CATEGORIES = [
     "All",
     "Partnerships",
@@ -16,9 +16,10 @@ export const CATEGORIES = [
     export const POSTS = [
       {
         id: 1,
+        image: mobile,
         dot: "blue",
-        read: "5 min read",
-        title: "Partnerships",
+        read: "5 mins read",
+        title: " Why Most Web3 Partnerships Fail (And How Infrastructure-First Collaboration Drives Real Growth)",
         excerpt:
           "Web3 partnerships exploded in 2024-2025, but over 70% deliver zero measurable TVL growth or user acquisition without deep infrastructure ties.",
         category: "Partnerships",
@@ -105,8 +106,9 @@ export const CATEGORIES = [
       {
         id: 2,
         dot: "orange",
-        read: "5 min read",
-        title: "Liquidity and Listing",
+        image: mobile,
+        read: "5 mins read",
+        title: "From Token Listing to Sustainable Liquidity: A Founder's Guide to Post-Listing Growth",
         excerpt:
           "Most token listings pump on day one, then liquidity dries up within 90 days unless usable depth and repeat demand are engineered as a system.",
         category: "Liquidity and Listing",
@@ -138,7 +140,7 @@ export const CATEGORIES = [
     
           { type: "p", text: "These errors fueled 2025's 'listing graveyard' on platforms like Raydium." },
     
-          { type: "h2", text: "The Difference Between Available Liquidity and Usable Liquidity" },
+          { type: "h2", text: 'The Difference Between "Available Liquidity" and "Usable Liquidity"'},
           { type: "p", text: "Available liquidity looks good on paper, big pools, high TVL. Usable liquidity is what traders actually experience." },
     
           {
@@ -186,8 +188,9 @@ export const CATEGORIES = [
       {
         id: 3,
         dot: "purple",
-        read: "5 min read",
-        title: "Growth Strategy",
+        image: mobile,
+        read: "5 mins read",
+        title: " The Web3 Growth Stack: Infrastructure, Liquidity, Distribution, and Community",
         excerpt:
           "Web3 growth collapses when tactics run alone. Infrastructure, liquidity, distribution, and community must be stacked as a connected system.",
         category: "Growth Strategy",
@@ -277,8 +280,9 @@ export const CATEGORIES = [
       {
         id: 4,
         dot: "blue",
-        read: "5 min read",
-        title: "B2B Integrations",
+        image: mobile,
+        read: "5 mins read",
+        title: "B2B Integrations in Web3: How Protocols Scale Faster Without Chasing Retail Users",
         excerpt:
           "Retail acquisition is getting expensive and noisy. B2B led distribution through partner products scales cheaper and compounds adoption.",
         category: "B2B Integrations",
@@ -354,8 +358,9 @@ export const CATEGORIES = [
       {
         id: 5,
         dot: "orange",
-        read: "5 min read",
-        title: "Emerging Markets",
+        image: mobile,
+        read: "5 mins read",
+        title: "Web3 Adoption in Emerging Markets: What Actually Drives On-Chain Activity",
         excerpt:
           "Emerging market hype hides a truth. Downloads do not equal on chain activity. Utility wins through payments, stables, and local liquidity rails.",
         category: "Emerging Markets",
@@ -367,12 +372,7 @@ export const CATEGORIES = [
             text:
               "Hype claims billions in 'emerging market users' flock to Web3. Tweets celebrate Nigeria's 'crypto capital' status. Yet Dune Analytics reveals the truth: high download counts mask low on-chain txns. Users onboard but rarely transact.",  
           },
-          {type: "p", text : "Why 'users' ≠ 'on-chain activity.' App installs ≠ swaps or yields. Real adoption means sustained volume from utility."},
-          {
-            type: "p",
-            text:
-              "Why users do not equal on chain activity. App installs are not swaps or yields. Real adoption means sustained volume from utility.",
-          },
+          {type: "p", text : "Why 'users' ≠ 'on-chain activity.' App installs ≠ swaps or yields. Real adoption means sustained volume from utility."},,
     
           { type: "h2", text: "The Unique Constraints of Emerging Markets" },
           {
@@ -429,8 +429,9 @@ export const CATEGORIES = [
       {
         id: 6,
         dot: "purple",
-        read: "5 min read",
-        title: "Volume-Driven Partnerships",
+        image: mobile,
+        read: "5 mins read",
+        title: " Designing Web3 Partnerships That Drive Volume, Liquidity, and Long-Term Adoption",
         excerpt:
           "Most partnerships die after the logo tweet. Volume, active users, liquidity depth, and retention must be measured and enforced post launch.",
         category: "Volume-Driven Partnerships",

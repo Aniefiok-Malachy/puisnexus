@@ -73,7 +73,7 @@ export default function BlogDetail() {
 
         <div className="bd-meta">
           <span>{post.read}</span>
-          <span className="bd-dot">•</span>
+          <span className="bd-dot"></span>
           <span>{post.date}</span>
         </div>
 

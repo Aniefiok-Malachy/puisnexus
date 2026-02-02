@@ -34,22 +34,22 @@ export default function Hero() {
               Book a Call <span className="arrow">→</span>
             </button>
           </div>
-          <div class="stats">
-            <div class="stat">
+          <div className="stats">
+            <div className="stat">
               <h2>82%</h2>
               <p>client retention rate</p>
             </div>
 
-            <span class="divider"></span>
+            <span className="divider"></span>
 
-            <div class="stat">
+            <div className="stat">
               <h2>250k+</h2>
               <p>wallets onboarded</p>
             </div>
 
-            <span class="divider"></span>
+            <span className="divider"></span>
 
-            <div class="stat">
+            <div className="stat">
               <h2>14+ countries</h2>
               <p>Reach across</p>
             </div>

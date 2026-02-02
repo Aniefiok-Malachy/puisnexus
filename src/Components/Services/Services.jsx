@@ -17,7 +17,7 @@ const services = [
   {
     title: "PUIS GROWTH",
     description:
-      "Puis Growth focuses on measurable outcomes users, engagement, and on chain activity not vanity metrics.",
+      "Puis Growth focuses on measurable outcomes (users, engagement, and on chain activity) not vanity metrics.",
     tags: ["Trading Volume", "Users Acquisition", "Liquidity Solutions"],
   },
   {
@@ -35,7 +35,7 @@ const services = [
   {
     title: "PUIS LAUNCH",
     description:
-      "Puis Launch focuses on measurable outcomes users, engagement, and on chain activity not vanity metrics.",
+      "Puis Launch design and execute structured launch campaigns that introduce Web3 projects to the market with clarity, control, and long-term adoption in mind.",
     tags: ["ICO Marketing", "IDO Marketing", "IEO Marketing", "Airdrop Campaign", "Web3 Quest"],
   },
 ];
