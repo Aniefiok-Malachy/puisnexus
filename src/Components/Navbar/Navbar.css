@@ -231,6 +231,14 @@
     padding: 10px 10px;
   }
 
+  .nav-logo{
+    width: 90%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-hamburger{
     width: 52px;
     height: 52px;
