@@ -69,6 +69,9 @@ export default function BlogDetail() {
       <div className="bd-wave bd-wave-2" />
 
       <div className="bd-container">
+        <div className="bd-media">
+          <img className="bd-img" src={post.image} alt={post.title} loading="lazy" />
+        </div>
         <h1 className="bd-title">{post.title}</h1>
 
         <div className="bd-meta">

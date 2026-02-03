@@ -5,11 +5,11 @@ import "./Team.css";
 import t1 from "../Assets/Alden.png";
 import t2 from "../Assets/Andy.png";
 import t3 from "../Assets/Akwaeno.png";
-import t4 from "../Assets/Emanuele.png";
+// import t4 from "../Assets/Emanuele.png";
 import t5 from "../Assets/Granton.png";
 import t6 from "../Assets/Olawale.png";
 import t7 from "../Assets/Pascal.png";
-import t8 from "../Assets/Olaige.png";
+// import t8 from "../Assets/Olaige.png";
 import t9 from "../Assets/Janica.png";
 import t10 from "../Assets/Chisom.png";
 import t11 from "../Assets/Changi.png";
@@ -19,22 +19,22 @@ import t14 from "../Assets/Temitayo.png";
 
 const team = [
   { name: "ALDEN PAUL", img: t1, linkedin: "https://www.linkedin.com/in/aldenyburan/" },
-  { name: "ANDY", img: t2, linkedin: "https://www.linkedin.com/in/andy-makkaraseng/" },
-  { name: "AKWAENO", img: t3, linkedin: "https://www.linkedin.com/in/akwaeno-isong-49176b26b/" },
-  { name: "EMANUELE DORNELAS", img: t4, linkedin: "https://www.linkedin.com/in/emanuele-dornelas-444619227/" },
+  { name: "ANDY MAKKARASENG", img: t2, linkedin: "https://www.linkedin.com/in/andy-makkaraseng/" },
+  { name: "AKWAENO ISONG", img: t3, linkedin: "https://www.linkedin.com/in/akwaeno-isong-49176b26b/" },
+  // { name: "EMANUELE DORNELAS", img: t4, linkedin: "https://www.linkedin.com/in/emanuele-dornelas-444619227/" },
 
-  { name: "GRANTON", img: t5, linkedin: "https://www.linkedin.com/in/granton-mburu/" },
-  { name: "OLAWALE", img: t6, linkedin: "https://www.linkedin.com/in/olawepo-olawale/" },
-  { name: "PASCAL", img: t7, linkedin: "https://www.linkedin.com/in/pascalabams/" },
-  { name: "OLAIGE", img: t8, linkedin: "https://www.linkedin.com/in/ige-abdullah/" },
+  { name: "GRANTON NYANGE", img: t5, linkedin: "https://www.linkedin.com/in/granton-mburu/" },
+  { name: "OLAWALE OLAWEPO", img: t6, linkedin: "https://www.linkedin.com/in/olawepo-olawale/" },
+  { name: "PASCAL ABAMS", img: t7, linkedin: "https://www.linkedin.com/in/pascalabams/" },
+  // { name: "ABDULLAH OLUWATOBILOBA", img: t8, linkedin: "https://www.linkedin.com/in/ige-abdullah/" },
 
-  { name: "JANICA", img: t9, linkedin: "https://www.linkedin.com/in/janicacabidoynicseuu/" },
-  { name: "CHISOM", img: t10, linkedin: "https://www.linkedin.com/in/chisomnwani/" },
-  { name: "CHANGI", img: t11, linkedin: "https://www.linkedin.com/in/changchyle/" },
-  { name: "HAPPINESS", img: t12, linkedin: "https://www.linkedin.com/in/happiness-chukwuma-385979209/" },
+  { name: "JANICA CABIDOY", img: t9, linkedin: "https://www.linkedin.com/in/janicacabidoynicseuu/" },
+  { name: "CHISOM NWANI", img: t10, linkedin: "https://www.linkedin.com/in/chisomnwani/" },
+  { name: "CHANGI LE", img: t11, linkedin: "https://www.linkedin.com/in/changchyle/" },
+  { name: "HAPPINESS CHUKWUMA", img: t12, linkedin: "https://www.linkedin.com/in/happiness-chukwuma-385979209/" },
 
-  { name: "DANIELLA", img: t13, linkedin: "https://www.linkedin.com/in/imabasi-james-440332211/" },
-  { name: "TEMITAYO", img: t14, linkedin: "https://www.linkedin.com/in/temmykel/" }
+  { name: "DANIELLA JAMES", img: t13, linkedin: "https://www.linkedin.com/in/imabasi-james-440332211/" },
+  { name: "TEMITAYO OLOWOOKERE", img: t14, linkedin: "https://www.linkedin.com/in/temmykel/" }
 ];
 
 

@@ -1,5 +1,11 @@
 // import { type } from "@testing-library/user-event/dist/type";
-import mobile from "../Components/Assets/mobile.png";
+import blog1 from "../Components/Assets/blog1.jpeg";
+import blog2 from "../Components/Assets/blog2.jpeg";
+import blog3 from "../Components/Assets/blog3.jpeg";
+import blog4 from "../Components/Assets/blog4.jpeg";
+import blog5 from "../Components/Assets/blog5.jpeg";
+import blog6 from "../Components/Assets/blog6.jpeg";
+
 export const CATEGORIES = [
     "All",
     "Partnerships",
@@ -16,7 +22,7 @@ export const CATEGORIES = [
     export const POSTS = [
       {
         id: 1,
-        image: mobile,
+        image: blog1,
         dot: "blue",
         read: "5 mins read",
         title: " Why Most Web3 Partnerships Fail (And How Infrastructure-First Collaboration Drives Real Growth)",
@@ -106,7 +112,7 @@ export const CATEGORIES = [
       {
         id: 2,
         dot: "orange",
-        image: mobile,
+        image: blog2,
         read: "5 mins read",
         title: "From Token Listing to Sustainable Liquidity: A Founder's Guide to Post-Listing Growth",
         excerpt:
@@ -188,7 +194,7 @@ export const CATEGORIES = [
       {
         id: 3,
         dot: "purple",
-        image: mobile,
+        image: blog3,
         read: "5 mins read",
         title: " The Web3 Growth Stack: Infrastructure, Liquidity, Distribution, and Community",
         excerpt:
@@ -278,7 +284,7 @@ export const CATEGORIES = [
       {
         id: 4,
         dot: "blue",
-        image: mobile,
+        image: blog4,
         read: "5 mins read",
         title: "B2B Integrations in Web3: How Protocols Scale Faster Without Chasing Retail Users",
         excerpt:
@@ -356,7 +362,7 @@ export const CATEGORIES = [
       {
         id: 5,
         dot: "orange",
-        image: mobile,
+        image: blog5,
         read: "5 mins read",
         title: "Web3 Adoption in Emerging Markets: What Actually Drives On-Chain Activity",
         excerpt:
@@ -427,7 +433,7 @@ export const CATEGORIES = [
       {
         id: 6,
         dot: "purple",
-        image: mobile,
+        image: blog6,
         read: "5 mins read",
         title: " Designing Web3 Partnerships That Drive Volume, Liquidity, and Long-Term Adoption",
         excerpt:
