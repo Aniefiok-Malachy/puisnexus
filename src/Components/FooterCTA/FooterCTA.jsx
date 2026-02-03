@@ -28,7 +28,12 @@ export default function FooterCTA() {
         <button 
           onClick={() => window.open("https://t.me/Akwaeno", "_blank")}
           className="cta-btn">
-          Book a Call <span className="cta-arrow">→</span>
+          Book a call <span className="cta-arrow">→</span>
+        </button>
+        <button 
+          onClick={() => window.open("https://t.me/Puisnexus", "_blank")}
+          className="cta-btn-chat">
+          Chat us  <span className="cta-arrow">→</span>
         </button>
         </div>
 

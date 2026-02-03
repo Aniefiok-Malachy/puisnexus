@@ -31,7 +31,7 @@ export default function Hero() {
             <button 
               onClick={() => window.open("https://t.me/Akwaeno", "_blank")}
               className="btn-primary">
-              Book a Call <span className="arrow">→</span>
+              Book a call <span className="arrow">→</span>
             </button>
           </div>
           <div className="stats">
