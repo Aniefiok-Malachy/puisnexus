@@ -116,7 +116,7 @@ export default function FooterCTA() {
               </span>
               <>
               <a
-                href="mailto:akwaenoi@puisnexus.com?subject=Partnership%20Inquiry&body=Hi%20Puis%20Nexus%2C%0A%0A"
+                href="mailto:akwaenoi@puisnexus.com?subject=Partnership%20Inquiry&body=Hi%20Tell%20Us%20Your%20Need%2C%0A%0A"
               >
                 akwaenoi@puisnexus.com
               </a>
