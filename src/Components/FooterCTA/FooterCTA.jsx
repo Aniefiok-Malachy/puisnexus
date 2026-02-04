@@ -97,9 +97,17 @@ export default function FooterCTA() {
             <button type="button" className="footer-link" onClick={() => scrollTo("copyright")}>
               Copyright
             </button>
-            <button type="button" className="footer-link" onClick={() => scrollTo("email-address")}>
+            <button
+              type="button"
+              className="footer-link"
+              onClick={() =>
+                window.location.href =
+                  "mailto:akwaenoi@puisnexus.com?subject=Partnership%20Inquiry&body=Hi%20Tell%20Us%20Your%20Need%2C%0A%0A"
+              }
+            >
               Email Address
             </button>
+
           </div>
           </div>
           
