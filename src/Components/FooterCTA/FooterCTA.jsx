@@ -115,7 +115,7 @@ export default function FooterCTA() {
                 <img src={email} alt=""/>
               </span>
               <>
-              <a href="hey@boostin.com">hey@boostin.com</a>
+              <a href="akwaenoi@puisnexus.com">hey@boostin.com</a>
               </>
             </div>
           </div>
