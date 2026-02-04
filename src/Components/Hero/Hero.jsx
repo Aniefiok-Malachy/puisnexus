@@ -29,7 +29,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <button 
-              onClick={() => window.open("https://t.me/Akwaeno", "_blank")}
+              onClick={() => window.open("https://calendly.com/akwaenoi/30min", "_blank")}
               className="btn-primary">
               Book a call <span className="arrow">→</span>
             </button>

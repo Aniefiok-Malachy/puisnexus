@@ -26,8 +26,8 @@
 }
 
 .hero-content h1 {
-  font-size: 56px;
-  line-height: 1.05;
+  font-size: clamp(28px, 5vw, 56px);
+  line-height: 1.1;
   letter-spacing: -0.02em;
   margin: 0 0 18px;
   font-weight: 700;
@@ -276,11 +276,12 @@
   .hero-actions {
     justify-content: center;
     margin-bottom: 26px;
+
   }
 
   .btn-primary {
     margin-top: 60px;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     padding: 12px 16px;
   }

@@ -31,7 +31,7 @@ export default function FooterCTA() {
           Book a call <span className="cta-arrow">→</span>
         </button>
         <button 
-          onClick={() => window.open("https://t.me/Puisnexus", "_blank")}
+          onClick={() => window.open("https://calendly.com/akwaenoi/30min", "_blank")}
           className="cta-btn-chat">
           Chat us  <span className="cta-arrow">→</span>
         </button>
