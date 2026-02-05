@@ -35,7 +35,7 @@ export default function Partners() {
   return (
     <section className="partners">
       <h2 className="partners-title">PARTNERS</h2>
-      <p className="partners-subtitle">A comprehensive list of our Partners</p>
+      <p className="partners-subtitle">A comprehensive list of our partners</p>
 
       <div className="marquee">
         <div className="track track-right">
