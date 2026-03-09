@@ -2,7 +2,7 @@ import React from "react";
 import "./Team.css";
 
 // Replace these with your real images (import like you did in Partners)
-import t1 from "../Assets/Alden.png";
+// import t1 from "../Assets/Alden.png";
 import t2 from "../Assets/Andy.png";
 import t3 from "../Assets/Akwaeno.png";
 // import t4 from "../Assets/Emanuele.png";
@@ -18,7 +18,7 @@ import t13 from "../Assets/Daniella.png";
 import t14 from "../Assets/Temitayo.png";
 
 const team = [
-  { name: "ALDEN PAUL", img: t1, linkedin: "https://www.linkedin.com/in/aldenyburan/" },
+  // { name: "ALDEN PAUL", img: t1, linkedin: "https://www.linkedin.com/in/aldenyburan/" },
   { name: "ANDY MAKKARASENG", img: t2, linkedin: "https://www.linkedin.com/in/andy-makkaraseng/" },
   { name: "AKWAENO ISONG", img: t3, linkedin: "https://www.linkedin.com/in/akwaeno-isong-49176b26b/" },
   // { name: "EMANUELE DORNELAS", img: t4, linkedin: "https://www.linkedin.com/in/emanuele-dornelas-444619227/" },
